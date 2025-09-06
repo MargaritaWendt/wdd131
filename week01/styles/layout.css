@@ -11,7 +11,7 @@ header,footer{
 }
 
 header p{
-    height: 50px; ;
+    height: 50px;
 }
 .navigation {
     display: flex;

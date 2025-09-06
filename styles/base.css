@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #4B0082;
+    --secondary-color: #6A0DAD;
+    --accent1-color: #9B30FF;
+    --accent2-color: #D8BFD8;
+    --heading-font: 'Montserrat',sans-serif; ;
+    --body-font: 'Roboto',sans-serif;;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: white;
+}
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+}
