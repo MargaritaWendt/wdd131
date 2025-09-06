@@ -10,12 +10,17 @@
 #course-title {
     display: block;
     text-align: center;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    color: white;
 }
 
 nav{
     display: flex;
     justify-content: center;
     gap: 20px;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
 nav a {
@@ -37,10 +42,52 @@ main {
 
 main {
     display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+.card {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+}
+.card img {
+    max-height: 150px;
+    width: auto;
+}
+
+.card .me,
+.card .country {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card .country {
+    grid-template-columns: 2fr 1fr;
 }
 
 .card {
     background-color: white;
     padding: 20px;
+}
+
+footer {
+    padding: 15px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
 }
