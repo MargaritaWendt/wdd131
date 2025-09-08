@@ -90,6 +90,10 @@ h3 {
     gap: 1rem;
 }
 
+li {
+    padding: 5px;
+}
+
 .card .country {
     grid-template-columns: 1fr 2fr;
 }
