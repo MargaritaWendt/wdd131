@@ -34,6 +34,7 @@ nav a:hover {
     background-color: var(--accent1-color);
     color: white;
 }
+
 main {
     max-width: 840px;
     margin: 20px auto;
@@ -44,6 +45,11 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 h2 {
@@ -59,34 +65,37 @@ h3 {
 .card {
     border: 2px solid var(--primary-color);
     border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
     background-color: #fff;
 }
+
+.card h2 {
+    margin-top: 0;
+    padding: 0.5rem ;
+}
+
+.me,
+.country {
+    padding: 10px ;
+}
+
 .card img {
-    max-height: 150px;
+    max-height: 200px;
     width: auto;
 }
 
-.card .me,
-.card .country {
+.card .me, .card .country {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 1rem;
 }
 
 .card .country {
-    grid-template-columns: 2fr 1fr;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
+    grid-template-columns: 1fr 2fr;
 }
 
 footer {
-    padding: 15px;
+    padding: 10px;
     background-color: var(--accent1-color);
     color: white;
     text-align: center;
