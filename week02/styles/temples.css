@@ -1,0 +1,73 @@
+:root{
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4b6a9b;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    background: #365075;
+    border-radius: 5px;
+}
+
+#menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #4b6a9b;
+    color: white;
+    text-align: center;
+}
