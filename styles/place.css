@@ -23,4 +23,6 @@ header,footer{
     padding: 1rem;
 }
 
-
+main{
+    text-align: center;
+}
