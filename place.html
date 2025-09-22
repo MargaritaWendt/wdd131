@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place - WDD 131 - Margarita Wendt</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Place page, Gilda Margarita Ortiz Reategui, Place Page.">
+    <meta name="author" content="Gilda Margarita Ortiz Reategui">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-media-query.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Germany</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="image">
+            <picture>
+                <source srcset="images/place-large.webp" media="min-width: 1000px">
+                <img src="images/place-small.webp" alt="Place Germany" width="500" height="auto">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+        </section>
+        <section>
+            <h2>Weather</h2>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Margarita Wendt | Germany</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
