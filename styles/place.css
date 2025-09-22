@@ -8,10 +8,10 @@
 }
 
 :root{
-    --primary-color: red;
+    --primary-color: #CC0000;
     --secundary-color: yellow;
     --another-color: black;
-    --accent-color:white;
+    --accent-color:#FFFFFF;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Roboto', sans-serif;
 }
