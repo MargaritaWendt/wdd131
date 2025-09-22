@@ -1,0 +1,17 @@
+@media screen and (min-width: 1000px) {
+    .mobile-weather {
+        display: none;
+    }
+
+    .desktop-weather{
+        display: inline;
+    }
+
+    .desktop-weather::after {
+        display: inline;
+        content: " ⛅";
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+}

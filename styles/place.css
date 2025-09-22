@@ -2,3 +2,25 @@
     width: 100%;
     height: auto;
 }
+
+.mobile-weather {
+    display: inline;
+}
+
+:root{
+    --primary-color: red;
+    --secundary-color: yellow;
+    --another-color: black;
+    --accent-color:white;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+header,footer{
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+}
+
+

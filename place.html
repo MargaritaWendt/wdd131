@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-media-query.css">
+    <link rel="stylesheet" href="styles/place-large-query.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -23,7 +23,7 @@
     <main>
         <div class="image">
             <picture>
-                <source srcset="images/place-large.webp" media="min-width: 1000px">
+                <source srcset="images/place-lage.webp" media="(min-width: 1000px)">
                 <img src="images/place-small.webp" alt="Place Germany" width="500" height="auto">
             </picture>
         </div>
@@ -31,7 +31,12 @@
             <h2>Data</h2>
         </section>
         <section>
-            <h2>Weather</h2>
+            <h2 class="desktop-weather">Weather</h2>
+            <div class="weather-icon">
+                <span class="mobile-weather">
+                    <img src="images/wheater-icon.svg" alt="weather-icon">
+                </span>
+            </div>
         </section>
     </main>
     <footer>
