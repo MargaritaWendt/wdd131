@@ -81,7 +81,7 @@ const temples = [
         dedicated: "1955, September, 11-15",
         area: 35546,
         imageUrl:
-            "https://churchofjesuschristtemples.org/bern-switzerland-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-3077-thumb.jpg"
     },
     {
         templeName: "Buenos Aires Argentina",
@@ -89,7 +89,7 @@ const temples = [
         dedicated: "1986, January, 17-19",
         area: 30659,
         imageUrl:
-            "https://churchofjesuschristtemples.org/buenos-aires-argentina-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-4087-thumb.jpg"
     },
     {
         templeName: "Mendoza Argentina",
@@ -97,7 +97,7 @@ const temples = [
         dedicated: "2024, September, 22",
         area: 21999,
         imageUrl:
-            "https://churchofjesuschristtemples.org/mendoza-argentina-temple/photographs/"
+            "https://churchofjesuschristtemples.org/assets/img/temples/mendoza-argentina-temple/mendoza-argentina-temple-51732-thumb.jpg"
     }
 ];
 
