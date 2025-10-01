@@ -101,11 +101,58 @@ const temples = [
     }
 ];
 
-createTemplesCard();
+createTemplesCard(temples);
 
-function createTemplesCard() {
-    temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    
+    createTemplesCard(temples)
+})
+
+const oldLink = document.querySelector("#old");
+
+oldLink.addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    let filteredTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0])
+        return year < 1900;
+        
+    });
+    createTemplesCard(filteredTemples)
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    let filteredTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year > 2000;
+    });
+    createTemplesCard(filteredTemples);
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    let filteredTemples = temples.filter(temple => temple.area > 90000);
+    createTemplesCard(filteredTemples);
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    let filteredTemples = temples.filter(temple => temple.area < 10000);
+    createTemplesCard(filteredTemples);
+});
+
+function createTemplesCard(filteredTemples) {
+    const container = document.querySelector(".container")
+    container.InnerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
+        card.classList.add("temple-card");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");

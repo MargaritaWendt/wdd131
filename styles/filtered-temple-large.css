@@ -9,10 +9,13 @@
     }
 
     .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
+}
 
-    main {
-        max-width: 1000px;
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
