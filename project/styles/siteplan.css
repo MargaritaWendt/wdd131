@@ -24,3 +24,7 @@ header,main,footer {
 h1,h2{
     text-align: center;
 }
+
+body{
+    font-family: var(--heading-font);
+}
