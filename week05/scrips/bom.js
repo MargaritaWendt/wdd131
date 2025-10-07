@@ -5,21 +5,54 @@ const list = document.querySelector("#list");
 button.addEventListener("click", function () {
     if (input.value.trim() !== "") {
 
-        const li = document.createElement("li");
-        li.textContent = input.value;
+        displayList(input.value);
 
-        const deleteButton = document.createElement("button");
-        deleteButton.textContent = '❌';
+        chaptersArray.push(input.value);
 
-        deleteButton.addEventListener('click', function () {
-            list.removeChild(li);
-            input.focus();
-        });
+        setChapterList();
 
-        li.append(deleteButton);
-        list.append(li);
+        input.value = "";
 
-        input.value = '';
         input.focus();
     }
 });
+
+let chaptersArray = getChapterList() || [];
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+});
+
+function displayList(item) {
+    const li = document.createElement("li");
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "❌";
+    deleteButton.classList.add('delete');
+
+    li.textContent = item;
+    li.appendChild(deleteButton);
+
+    deleteButton.addEventListener("click", () => {
+        list.removeChild(li);
+        deleteChapter(li.textContent);
+        input.focus();
+    });
+
+    document.querySelector("#list").appendChild(li);
+}
+
+function setChapterList() {
+    localStorage.setItem('chapterList', JSON.stringify(chaptersArray));
+}
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem("chaptersList"));
+}
+
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1);
+    chaptersArray = chaptersArray.filter((item) => item !== chapter);
+
+    setChapterList();
+}
