@@ -20,12 +20,12 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label>Product Name <span aria-hidden="true" style="color:red;">*</span>
+                <label for="productName">Product Name <span class="required">*</span></label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product...</option>
-                </select></label>
+                </select>
         
-                <div>Overall Rating <span aria-hidden="true" style="color:red;">*</span></div>
+                <div>Overall Rating <span class="required">*</span></div>
                 <div class="stairs">
                 <label><input type="radio" id="rating1" name="rating" value="1" required>☆</label>
                 
@@ -38,7 +38,7 @@
                 <label><input type="radio" id="rating5" name="rating" value="5">☆☆☆☆☆</label>
                 </div>
 
-                <div>Date of Installation <span aria-hidden="true" style="color:red;">*</span></div>
+                <div>Date of Installation <span class="required">*</span></div>
                 <input type="date" id="installationDate" name="installationDate" required>
 
                 <div>Which features did you find useful in the product? <em>(Check all that apply)</em></div>
@@ -51,12 +51,12 @@
                 
                 <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
 
-                <div>Written Review<span style="color:rgb(42, 42, 42);">(Optional)</span></div>
+                <div>Written Review<span>(Optional)</span></div>
                 <textarea id="writtenReview" name="writtenReview" rows="4" cols="40"
                     placeholder="Write your review here..."></textarea>
 
-                <label>Your Name <span style="color:rgb(42, 42, 42);">(Optional)</span>
-                <input type="text" id="userName" name="userName"></label>
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
             </fieldset>
 
             <button type="submit">Post Review</button>
