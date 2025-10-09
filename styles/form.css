@@ -6,12 +6,12 @@
 
 body{
     font-size: 1.2rem;
-    margin: 0 auto;
-    width: 650px;
+    margin: 0;
+    min-width: 600px;
 }
 
 header,footer{
-    background-color: rgb(88, 88, 253);
+    background-color: rgb(67, 67, 204);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -35,7 +35,7 @@ header,footer{
 
 .wf1 input[type="text"],
 [type="date"],
-.wf1 select {
+.wf1 select,.wf1 textarea {
     border-radius: 6px;
     padding:.75rem;
     width: 100%;
@@ -58,6 +58,9 @@ form {
     background-color: rgb(192, 229, 253);
 }
 
+.stairs{
+    display: flex;
+}
 
 
 /*/form{

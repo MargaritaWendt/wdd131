@@ -18,10 +18,11 @@
             <fieldset>
                 <label>Product Name <span aria-hidden="true" style="color:red;">*</span></label>
                 <select id="productName" name="productName" required>
-                    <option disabled selected>Select a Product...</option>
+                    <option value="" disabled selected>Select a Product...</option>
                 </select>
-
+        
                 <div>Overall Rating <span aria-hidden="true" style="color:red;">*</span></div>
+                <div class="stairs">
                 <label><input type="radio" id="rating1" name="rating" value="1" required>☆</label>
                 
                 <label><input type="radio" id="rating2" name="rating" value="2">☆☆</label>
@@ -31,6 +32,7 @@
                 <label><input type="radio" id="rating4" name="rating" value="4">☆☆☆☆</label>
                 
                 <label><input type="radio" id="rating5" name="rating" value="5">☆☆☆☆☆</label>
+                </div>
 
                 <div>Date of Installation <span aria-hidden="true" style="color:red;">*</span></div>
                 <input type="date" id="installationDate" name="installationDate" required>
