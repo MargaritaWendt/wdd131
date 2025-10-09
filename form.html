@@ -16,10 +16,10 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label>Product Name <span aria-hidden="true" style="color:red;">*</span></label>
+                <label>Product Name <span aria-hidden="true" style="color:red;">*</span>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product...</option>
-                </select>
+                </select></label>
         
                 <div>Overall Rating <span aria-hidden="true" style="color:red;">*</span></div>
                 <div class="stairs">
@@ -37,22 +37,22 @@
                 <div>Date of Installation <span aria-hidden="true" style="color:red;">*</span></div>
                 <input type="date" id="installationDate" name="installationDate" required>
 
-                <div>Which features did you find useful in the product? <em>(Check all that apply)</em></div><br>
+                <div>Which features did you find useful in the product? <em>(Check all that apply)</em></div>
                 
-                <label><input type="checkbox" id="durability" name="features" value="yes">Durability</label><br>
+                <label><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
                 
-                <label><input type="checkbox" id="easeOfUse" name="features" value="yes">Ease of Use</label><br>
+                <label><input type="checkbox" id="easeOfUse" name="features" value="yes">Ease of Use</label>
                 
-                <label><input type="checkbox" id="performance" name="features" value="yes">Performance</label><br>
+                <label><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
                 
-                <label><input type="checkbox" id="design" name="features" value="yes">Design</label><br><br>
+                <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
 
-                <div>Written Review<span style="color:rgb(42, 42, 42);">(Optional)</span></div><br>
+                <div>Written Review<span style="color:rgb(42, 42, 42);">(Optional)</span></div>
                 <textarea id="writtenReview" name="writtenReview" rows="4" cols="40"
-                    placeholder="Write your review here..."></textarea><br><br>
+                    placeholder="Write your review here..."></textarea>
 
-                <label>Your Name <span style="color:rgb(42, 42, 42);">(Optional)</span><br>
-                <input type="text" id="userName" name="userName"><br><br></label>
+                <label>Your Name <span style="color:rgb(42, 42, 42);">(Optional)</span>
+                <input type="text" id="userName" name="userName"></label>
             </fieldset>
 
             <button type="submit">Post Review</button>
