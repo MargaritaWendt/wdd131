@@ -8,6 +8,7 @@ body{
     font-size: 1.2rem;
     margin: 0;
     min-width: 600px;
+    font-family: "Open Sans",sans-serif;;
 }
 
 header,footer{
