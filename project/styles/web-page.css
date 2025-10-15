@@ -1,6 +1,6 @@
 :root {
     --primary-color: #B00020;
-    --secondary-color: #FF5C5C;
+    --secondary-color: #e72828;
     --accent1-color: #000000;
     --accent2-color: #FFFFFF;
     --heading-font: "Open Sans", sans-serif;
@@ -70,7 +70,6 @@ main {
 }
 
 figure {
-    margin: 0;
     text-align: center;
 }
 
@@ -78,6 +77,10 @@ figure img {
     width: 100%;
     max-width: 450px;
     border-radius: 10px;
+}
+
+figcaption {
+    font-weight: bold;
 }
 
 h1,h2,p {

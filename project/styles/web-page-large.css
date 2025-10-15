@@ -22,4 +22,15 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    .recommendations{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .trips{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
