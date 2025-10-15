@@ -34,6 +34,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .trips div{
+        align-content: center;
+    }
+
     .history p{
         padding: 5rem;
     }
