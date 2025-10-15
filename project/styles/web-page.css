@@ -83,6 +83,10 @@ figcaption {
     font-weight: bold;
 }
 
+figure p{
+    padding-bottom: 1.5rem;
+}
+
 h1,h2,p {
     text-align: center;
 }
@@ -132,10 +136,6 @@ textarea {
     box-sizing: border-box;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
 
 textarea {
     resize: vertical;
