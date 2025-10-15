@@ -1,0 +1,25 @@
+@media screen and (min-width: 1000px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu-button {
+        display: none
+    }
+
+    main {
+        min-width: 1000px;
+    }
+
+    .hero h1{
+        width: 96%;
+        margin: -1rem 2% 2rem 2%;;
+    }
+
+    .figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

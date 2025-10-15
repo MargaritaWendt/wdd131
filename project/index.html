@@ -12,21 +12,22 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/web-page.css">
     <link rel="stylesheet" href="styles/web-page-large.css">
-    <scrip src="scripts/web-page.js" defer></scrip>
+    <script src="scripts/web-page.js" defer></script>
 </head>
     <header>
-        <img src="images/logo-siteplan.png" alt="Lationos in the Black Forest Logo" width="100">
-        <nav>
+        <img src="images/logo-siteplan.png" alt="Latinos in the Black Forest Logo" width="100">
+        <button id="menu-button">☰</button>
+        <nav id="nav-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="hero">
         <picture>
-        <source srcset="images/hero-large-1.webp" media="min-width: 550px">
-        <img src="images/hero-min-1.webp" alt="Black Forest Route" width="450" height="auto">
+        <source srcset="images/hero-large-1.webp" media="(min-width: 1000px)">
+        <img src="images/hero-min-1.webp" alt="Black Forest Route" width="500" height="auto">
         </picture>
         <h1>Latinos in The Black Forest</h1>
         </section>
@@ -35,13 +36,13 @@
             <p>Have you recently moved to Germany and are currently in the Black Forest? Don't feel alone; join our Latino community in
             this area.</p>
         </section>
-        <div>
+        <div class="figure">
             <figure>
-                <img src="images/friends.webp" alt="Friends smiling">
+                <img src="images/friends.webp" alt="Friends smiling" height="260">
                 <figcaption>Good experiences</figcaption>
             </figure>
             <figure>
-                <img src="images/mate-tee.webp" alt="sharing a Mate tee moment">
+                <img src="images/mate-tee.webp" alt="sharing a Mate tee moment" height="260">
                 <figcaption>Culture exchange</figcaption>
             </figure>
         </div>
